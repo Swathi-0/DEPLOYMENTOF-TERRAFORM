@@ -12,13 +12,13 @@ on:
 #   AWS_SECRET_ACCESS_KEY:
 
 env:
-  IMAGE_NAME: compress-master-SIH
+  IMAGE_NAME: compress-master
   AWS_REGION: us-east-1                          
   ECS_SERVICE: ecs-cicd-ecs-service              
   ECS_CLUSTER: ecs-cicd-ecs-cluster              
   ECS_TASK_DEFINITION: aws/td.json 
   CONTAINER_IMAGE: swathi0/deploy
-  CONTAINER_NAME: compress-master-SIH
+  CONTAINER_NAME: compress-master
 
 defaults:
   run:
