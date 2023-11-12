@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM phython 3
 
 ENV PYTHONUNBUFFERED 1
 
