@@ -13,11 +13,15 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "new_bucket" {
-  bucket = "deployment-django"
+  bucket = "deployment-django-${random_id.new.id}"
 
   object_lock_enabled = false
 
   tags = {
     Environment = "Prod"
   }
+}
+
+resource "random_id" "new" {
+  byte_length = 8
 }
