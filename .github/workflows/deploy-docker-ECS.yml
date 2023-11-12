@@ -43,8 +43,7 @@ jobs:
         - name: Build and push
           uses: docker/build-push-action@v4
           with:
-            context: .
-            file: ./Dockerfile
+            context: dockerFileFolder/
             push: true
             tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
         - name: Configure AWS credentials
