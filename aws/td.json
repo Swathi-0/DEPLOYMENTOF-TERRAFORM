@@ -2,7 +2,7 @@
     "taskDefinitionArn": "arn:aws:ecs:us-east-1:623033600040:task-definition/hdsd:1",
     "containerDefinitions": [
         {
-            "name": "dockerhub",
+            "name": "deploy",
             "image": "swathi0/deploy:latest",
             "cpu": 0,
             "portMappings": [
